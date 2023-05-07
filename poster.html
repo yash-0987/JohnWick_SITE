@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters</title>
+    <style>
+      /*image grid*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+      .poster{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+      }
+        /*slide show*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 390px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 4s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+      /* common code for every page*/
+        body{
+            background-image: url('https://wallpaperaccess.com/full/983279.jpg');
+          background-repeat: none;
+            background-size: 100%;
+        }
+        /* navbar of the page*/
+        #mynav{
+          background-image: url('https://cdn.wallpapersafari.com/2/6/GJ0hKr.jpg');
+  background-repeat: none;
+  background-size: 100%;
+        }
+        .i{
+            position: relative;
+            right: 12%;
+            top: 20px;
+        }
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url('https://images3.alphacoders.com/103/thumb-1920-1033561.jpg');
+  background-repeat: none;
+  background-size: 100%;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+ .navbar{
+            position: relative;
+            top: 30px;
+            right:4%
+        }
+        .logo1{
+            position: relative;
+            left: 30%;
+            opacity: 0.6;
+        }
+        .logo2{
+            position: relative;
+            left: 36%;
+            opacity: 0.6;
+        }
+        .logo3{
+            position: relative;
+            left: 41%;
+            opacity: 0.6;
+        }
+        .logo4{
+            position: relative;
+            left: 46%;
+            opacity: 0.6;
+        }
+        .logo1:hover{
+          opacity: 1;
+        }
+        .logo2:hover{
+          opacity: 1;
+        }
+        .logo3:hover{
+          opacity: 1;
+        }
+        .logo4:hover{
+          opacity: 1;
+        }
+        /*moveis*/
+        .movie{
+          position: relative;
+          float: right;
+          right: 16%;
+        }
+       /*footer*/
+        .foot{
+      position: relative;
+      bottom: 50px;
+    }
+    .img{
+      position: relative;
+      left: 153px;
+    }
+
+    .l1{
+      padding:7px ;
+      font-size: large;
+      font-weight: 200;
+      list-style: none;
+    }
+    .a1{
+      color: azure;
+    }
+    .a1:link {
+  text-decoration: none;
+}
+
+.a1:visited {
+  text-decoration: none;
+}
+
+.a1:hover {
+  text-decoration: underline;
+}
+
+.a1:active {
+  text-decoration: underline;
+}
+.m1{
+      position: relative;
+      float: right;
+      right: 50%;
+      bottom:60px
+    }
+.m2{
+      position: relative;
+      float: right;
+      right: 10%;
+      bottom: 60px;
+    }
+    .l2{
+      padding:7px ;
+      font-size: large;
+      font-weight: 200;
+      color: azure;
+      list-style: none;
+    }
+    .a2{
+      color: azure;
+    }
+    .a2:link {
+  text-decoration: none;
+}
+
+.a2:visited {
+  text-decoration: none;
+}
+
+.a2:hover {
+  text-decoration: underline;
+}
+
+.a2:hover {
+  text-decoration: underline;
+}
+
+.a2:active {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body >
+    <!--navbar of the page-->
+     <header class="navbar">
+       <a href="jw1.html" > <Img class="logo1" src="https://johnwick.movie/assets/img/header/jw1.png" height="20px" ></a>
+        <a href="jw2.html">   <img class="logo2" src="https://johnwick.movie/assets/img/header/jw2.png" height="39px" ></a>
+         <a href="jw3.html">   <img class="logo3" src="https://johnwick.movie/assets/img/header/jw3.png" height="41px" ></a>
+         <a href="jw4.html">   <img class="logo4" src="https://johnwick.movie/assets/img/header/jw4.png" height="30px"></a>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="second.html">Home</a>
+    <a href="cast.html">Cast</a>
+    <a href="poster.html">Posters</a>
+    <a href="jw.html">The World of John Wick</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="i" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAUVBMVEUAAAD///+kpKQKCgq0tLTDw8PW1tZ5eXnp6elFRUUMDAzb29t8fHx/f3/t7e2KiopOTk6WlpaqqqotLS1VVVW7u7vz8/PJycldXV2ysrI1NTXoJYLmAAABI0lEQVR4nO3cyW6DQBBFUQcyksHxFCf5/w/NukSrEAtcwT5n/xB3S6vZbAAAAAAAAAAAAFi9bZfafzY2u3yzuP1hTuHrXe5tPOk/JjaLe5lT+DjxsKdG4fNFMhIKFQYKSyhUGCgsoVBhoLCEQoWBwhIKFQYKSyhUGCgsoTCY+qr/Pp4MXxfJSMwq7Ic+M7Q2+WR5zZcCAAAAAODm7e5Tp+N40nf5ZnGn3zmFbiOs/+xJocISChUGCksoVBgoLKFQYaCwhEKFgcISChUGCksovLHCVd5GaP3aCQAAAAAArl73kDp/jyf9T75Z3NlthOD6z54UKiyhUGGgsIRChYHCEgoVBgpLKFQYKCyhUGGgsIRChUGjcFhXIQAAAAAAAAAAAP/SHw+OSZCeSGykAAAAAElFTkSuQmCC" height="50px"></span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     </header>
+     <br><br><br><br><br><br>
+ <main>
+
+
+<h2 align="center" class="poster" >Poster</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/03.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/03.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/07.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/04.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/15.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/06.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/20.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<!-- Header -->
+<div align="center" class="poster">
+  <h1>GALLARY</h1>
+  <p>The Collection of John Wick's Art.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="data:image/jpeg;base64,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" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5J4nASqBLHmcavKcjuLDyYminVUwUZs6hMQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWEPUC-PpX1af1SJhYmDhjQgBuh2x8NFeWQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLCHmfvFh_vJ0pAMMxsLKF35iSHuAVc_4xA&usqp=CAU" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/26.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/14.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/15.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/16.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/17.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/18.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/19.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/20.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-4/posters/24.jpg" style="width:100%">
+        <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/08.jpg" style="width:100%">
+
+  </div>  
+  <div class="column">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-1/posters/02.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-1/posters/04.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/19.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/17.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/14.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-3/posters/13.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/09.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/11.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/12.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/14.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/15.jpg" style="width:100%">
+    <img src="https://johnwick.movie/assets/img/film/john-wick-2/posters/02.jpg" style="width:100%">
+  </div>
+</div>
+
+      
+    </main>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br>
+
+<!-- footer-->
+ <footer class="foot">
+  <br><br><br><br><br>
+  <img class="img" src="https://johnwick.movie/assets/img/legal/jw-franchise.png" height="50px" >
+  <ul class="m1">
+    <li class="l1"><a class="a1" href="second.html" >Home</a></li>
+    <li class="l1"><a class="a1" href="cast.html" >Cast</a> </li>
+    <li class="l1"><a  class="a1" href="poster.html" >Posters</a></li>
+    <li class="l1"><a class="a1" href="jw.html" >The World of John Wick </a></li>
+  </ul>
+  <ul class="m2">
+    <li class="l2">  <a class="a2" href="jw1.html" >John Wick Chapter 1</a>  </li>
+    <li class="l2">  <a class="a2" href="jw2.html">John Wick Chapter 2</a> </li>
+    <li class="l2">  <a class="a2" href="jw3.html">John Wick Chapter 3</a> </li>
+    <li class="l2">  <a class="a2" href="jw4.html" >John Wick Chapter 4</a> </li>
+  </ul>
+   </footer>
+</body>
+</html>
+
+
+
